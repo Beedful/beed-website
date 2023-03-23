@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <title>04/06/2022 Blog | Beed</title>
+    <style>
+        code {
+            font-family: Consolas,"courier new";
+            color: crimson;
+            background-color: #f1f1f1;
+            padding: 2px;
+            font-size: 105%;
+        }
+
+        pre {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            tab-size: 2;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html">RETURN TO BEED</a> <hr>
+    <p style="font-family: 'Macondo', cursive;">
+        Do you hate needing to use your hands to calculate math? Well, you don't need to, now!<br>You can just input the numbers and 
+        the method (addition, subtraction, multiplication <i>etc</i>), it will return the answer to you!<br><br>
+        In this blog, I'll teach you how to make addition, subtraction, multiplication and division functions and display the result.
+        <br>First, we need to handle user input. We can use the <code>input()</code> built-in function for this.<br>
+        Keep in mind that you need at least a bit of knowledge of Python for this. Please make sure that you have Python installed in 
+        your computer.<br>
+        <br>
+        <u>Step 1, take user input</u><br>
+        Like I said, you can use the <code>input()</code> function for this. Let's create 2 variables.<br><br>
+
+        <code>
+num1 = int(input("Enter first number: "))<br>
+num2 = int(input("Enter second number: "))
+        </code>
+<br><br>
+        Alright, we created the variables.<br><br>
+        <u>Step 2, choose method</u><br>
+        Choosing method is fairly easy, you just use the <code>input()</code> function again.<br><br>
+
+        <code>
+print("Choose your method.")<br>
+print("[1] Addition")<br>
+print("[2] Subtraction")<br>
+print("[3] Multiplication")<br>
+print("[4] Division")<br>
+method = input("Choose: ")
+        </code>
+        <br><br>
+        Now, how this works is that it prints out the options and asks you to select one.
+        <br><br>
+        <u>Step 3, addition, subtraction, multiplication, division</u><br>
+        This is super easy. You just need to create four functions and return a value.
+        <br><br>
+        <code>
+def add(a, b): return a + b<br>
+def sub(a, b): return a - b<br>
+def mul(a, b): return a * b<br>
+def div(a, b): return a / b
+        </code>
+        <br><br>
+        Now that you have finished making the functions, it's time to input it in your code.
+        <br>Just after the <code>method = input("Choose: ")</code> line of code, add this:
+        <br><br>
+        <code>
+if method == "1": print(add(num1, num2))<br>
+elif method == "2": print(sub(num1, num2)))<br>
+elif method == "3":print(mul(num1, num2))<br>
+elif method == "4": print(div(num1, num2))<br>
+else: print("That choice is not valid!")
+        </code><br><br>
+        Ok, you've done it!<br><br>
+        <u>Whole code</u>
+        <pre>
+def add(a, b): return a + b
+def sub(a, b): return a - b
+def mul(a, b): return a * b
+def div(a, b): return a / b
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+print("Choose your method.")
+print("[1] Addition")
+print("[2] Subtraction")
+print("[3] Multiplication")
+print("[4] Division")
+method = input("Choose: ")
+if method == "1": print(add(num1, num2))
+elif method == "2": print(sub(num1, num2))
+elif method == "3": print(mul(num1, num2))
+elif method == "4": print(div(num1, num2))
+else: print("That choice is not valid!")</pre>
+    </p>
+    <hr>
+    <ol>
+        <li>Date: 04/06/2022</li>
+        <li>Time: 8:50-9:49 (MYT UTC+0800)</li>
+        <li>Subject: <i>How to make a calculator in Python</i></li>
+    </ol>
+</body>
+</html>

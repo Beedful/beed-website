@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="logo.svg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <title>DD/MM/YYYY Blog | Beed</title>
+    <style>
+    </style>
+</head>
+<body>
+    <a href="../index.html">RETURN TO BEED</a> <hr>
+    <p>
+        Lorem Ipsum or something...
+    </p>
+    <hr>
+    <ol>
+        <li>Date: DD/MM/YYYY</li>
+        <li>Time: HH:MM (MYT UTC+0800)</li>
+        <li>Subject: Lorem Ipsum or something...</li>
+    </ol>
+</body>
+</html>
+
+**
+STEPS:
+1. MAKE NEW FOLDER WITH THE NAME YYYYMMDD.
+2. REPLACE YYYY WITH THE YEAR, MM WITH THE MONTH, DD WITH THE DAY.
+3. MAKE INDEX.HTML FILE INSIDE THE FOLDER.
+4. COPY THIS AND CHANGE CONTENT.
+5. ADD NEW LINK IN THE MAIN BLOG PAGE
+**
