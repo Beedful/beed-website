@@ -6,6 +6,6 @@ var nn = Number(n);
 
 for (let e = 1; e <= 100; e++) {
     var obj = document.createElement('li');
-    obj.innerHTML = `${n} x ${e} = ${e * nn}`
+    obj.innerHTML = `${n} &times; ${e} = ${e * nn}`
     mullist.innerHTML = mullist.innerHTML + `<li>${obj.innerHTML}</li><br>`
 }
