@@ -4,7 +4,7 @@ This is the git repo for [Beedful's hub](https://beedful.netlify.app).
 ## List of Pages
 | Page | Purpose |
 | --- | --- |
-| beed_images_444 | - |
+| images | - |
 | blog | Random blog. |
 | links | Social links. |
 | tools | Useful tools. |
