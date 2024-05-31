@@ -5,8 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1 | Beed Images 444</title>
+    <style>
+        .imagediv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
-    <img src="image.png" id="img">
+    <input id="pw" type="password">
+    <button id="submitbtn">View</button>
+    <div class="imagediv">
+    <img src="image.png" id="img" hidden>
+    </div>
+
+    <script>
+        String.prototype.hashCode = function() {
+            var hash = 0,
+                i, chr;
+            if (this.length === 0) return hash;
+            for (i = 0; i < this.length; i++) {
+                chr = this.charCodeAt(i);
+                hash = ((hash << 5) - hash) + chr;
+                hash |= 0;
+            }
+            return hash;
+        }
+
+        document.getElementById("submitbtn").addEventListener("click", function() {
+            if (document.getElementById("pw").value.hashCode() == -1180245090) {
+                document.getElementById("img").removeAttribute('hidden');
+            }
+        })
+    </script>
 </body>
 </html>
