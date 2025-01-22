@@ -1,36 +1,90 @@
+<!--
+
+Steps:
+1. Replace post title
+2. Replace title and content
+3. Fix any placeholder info
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="logo.svg">
+    <link rel="icon" href="../../logo.svg">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
-    <title>DD/MM/YYYY Blog | Beed</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Post Title</title> <!-- POST TITLE HERE -->
     <style>
+        .fixed-width-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: "Poppins", "EB Garamond", sans-serif;
+        }
+
+        .content::first-line {
+            font-variant: small-caps;
+            font-family: "EB Garamond", serif;
+            font-size: 1.4rem;
+        }
+
+        .content {
+            font-family: "EB Garamond", serif;
+            font-size: 1.4rem;
+        }
     </style>
 </head>
 <body>
-    <a href="../index.html">RETURN TO BEED</a> <hr>
-    <p>
-        Lorem Ipsum or something...
-    </p>
-    <hr>
-    <ol>
-        <li>Date: DD/MM/YYYY</li>
-        <li>Time: HH:MM (MYT UTC+0800)</li>
-        <li>Subject: Lorem Ipsum or something...</li>
-    </ol>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../logo.jpg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+                Blog
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../../">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="../../links" class="nav-link">Social & Links</a> 
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tools
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../../tools/multiplycalc/">Multiplication Calculator</a></li>
+                  <li><a class="dropdown-item" href="../../tools/randomnum/">Random Number Generator</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="container pt-3 fixed-width-container">
+        <h1>Post Title</h1> <!-- POST TITLE HERE -->
+        <div class="content">
+            <p>Today, I made a new user interface for the blog posts. This user interface is powered by various Bootstrap components such as <code class="rounded-5 bg-light-subtle">container</code> and more.</p>
+            <p>
+                Check this out! This is a second template for new blog posts, even more modern and beautiful than the first one. You can display images, too!
+            </p>
+            <figure class="figure text-center">
+                <img src="../../images/1/image.png" alt="A sample image." class="rounded figure-img">
+                <figcaption class="figure-caption">A caption.</figcaption>
+            </figure>
+            <p>It supports ligatures, like this: fi. It also supports small caps! Check out the first line of the post!</p>
+        </div>
+    </div>
 </body>
 </html>
-
-**
-STEPS:
-1. MAKE NEW FOLDER WITH THE NAME YYYYMMDD.
-2. REPLACE YYYY WITH THE YEAR, MM WITH THE MONTH, DD WITH THE DAY.
-3. MAKE INDEX.HTML FILE INSIDE THE FOLDER.
-4. COPY THIS AND CHANGE CONTENT.
-5. ADD NEW LINK IN THE MAIN BLOG PAGE
-**
