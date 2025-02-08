@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Blog</title>
     <style>
         .vl {
@@ -16,59 +17,108 @@
           margin-left: -3px;
           top: 10%;
         }
+
+        .datedisplay {
+          color: #5d5d5d;
+        }
+
+        blockquote {
+          font-style: italic;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../logo.jpg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
-                Blog
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a href="../links" class="nav-link">Social & Links</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tools
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="../tools/multiplycalc/">Multiplication Calculator</a></li>
-                  <li><a class="dropdown-item" href="../tools/randomnum/">Random Number Generator</a></li>
-                </ul>
-              </li>
-            </ul>
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                  <img src="../logo.jpg" alt="logo" width="30" height="24" class="d-inline-block align-text-top">
+                  Blog
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link " href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../links" class="nav-link">Social & Links</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tools
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../tools/multiplycalc/">Multiplication Calculator</a></li>
+                    <li><a class="dropdown-item" href="../tools/randomnum/">Random Number Generator</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-    </nav>
-    <div style="
-        top: 10%;
-        position: absolute;
-        left: 5%;
-    ">
-        <h1>Welcome to my blogs!</h1>
-        <p>
-            I write some very useless blogs here.
-        </p> <hr>
-        <h2>Blog List</h2>
-        <ul>
-            <!--<li><a href="20220522/index.html">22/5/2022 - Bored</a></li>
-            <li><a href="20220523/index.html">23/5/2022 - Again, Bored (Chinese)</a></li>-->
-            <li><a href="20230701/index.html">1/7/2023 - Testing</a></li>
-        </ul>
-        <!--<a href="../urls/rickroll"><strong style="color: #df5f5f;">There are no blogs right now.</strong></a>-->
+      </nav>
+      <br>
+      <div class="container">
+      <div class="row">
+        <div class="col-md-8 blog-main">
+          <h3 class="pb-3 mb-4 font-italic border-bottom display-4">
+            Blog
+          </h3>
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Sample blog post</h2>
+            <p class="blog-post-meta datedisplay">January 1, 2014</p>
+            This is a testing blog post.
+          </div><!-- /.blog-post -->
+          <hr>
+          <div class="blog-post">
+            <h2 class="blog-post-title">Another blog post</h2>
+            <p class="blog-post-meta datedisplay">January 1, 2014</p>
+
+            <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+          </div><!-- /.blog-post -->
+          <hr>
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">New feature</h2>
+            <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
+
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          </div><!-- /.blog-post -->
+
+        </div><!-- /.blog-main -->
+
+        <aside class="col-md-4 blog-sidebar">
+          <div class="p-3 mb-3 bg-light rounded">
+            <h4 class="font-italic">About</h4>
+            <p class="mb-0">Welcome to my blogs! This is where I write about my experiences and learnings.</p>
+          </div>
+
+          <div class="p-3">
+            <h4 class="font-italic">Archives</h4>
+            <ol class="list-unstyled mb-0">
+              <li><a href="./20230701/">1 July 2023 - Testing</a></li>
+            </ol>
+          </div>
+
+          <div class="p-3">
+            <h4 class="font-italic">Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+        </aside><!-- /.blog-sidebar -->
+
+      </div>
     </div>
+
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
