@@ -11,18 +11,24 @@
             text-align: center;
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body>
+<body class="container mt-2">
     <h1>404</h1>
     <p>The page that you were trying to find doesn't exist. It may have been moved, renamed, deleted or never existed.
     </p>
+    <span>Tips</span>
+
     <ul>
-        <p>Tips:</p>
-        <li>Check if you typed the webpage that you were trying to visit's name correctly</li>
-        <li>If this problem happens with a webpage that definitely exists, please contact me (+60 12 364 1652).</li>
+        
+        <li>Check if you typed the name of the page that you were trying to visit correctly.</li>
+        <li>If this problem happens with a page that definitely exists, please contact me (<a href="tel:60123641652">+60 12 364 1652</a>).</li>
     </ul>
     <br>
-    <a href="https://beedful.netlify.app" class="return-link">Return to home</a><br><br>
-    <button onclick="window.history.back()">Back</button>
+    <div class="justify-items-center text-center">
+        <a href="https://beedful.netlify.app" class="return-link btn btn-secondary">Return to home</a>
+        <button onclick="window.history.back()" class="btn btn-primary px-3 justify-content-center">Back</button>
+    </div>
+    
 </body>
 </html>
