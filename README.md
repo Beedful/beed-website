@@ -2,7 +2,6 @@
 This is the git repo for [Beedful's hub](https://beedful.netlify.app).
 
 ## List of Pages
-<<<<<<< HEAD
 | Page | Purpose | Fulfilled requirements? | Icon pack version |
 | --- | --- | --- | --- |
 | images | - | No | - |
@@ -11,17 +10,7 @@ This is the git repo for [Beedful's hub](https://beedful.netlify.app).
 | tools | Useful tools. | - | - |
 | urls | Custom redirects. | - | - |
 | yt | - | - | - |
-=======
-| Page | Purpose |
-| --- | --- |
-| images | - |
-| blog | Random blog. |
-| links | Social links. |
-| tools | Useful tools. |
-| urls | Custom redirects. |
-| yt | - |
-| data | Database of various data. |
->>>>>>> eba4889f7868724bd2a67dd5d877626467c043bc
+| data | Database of various data. | Yes | - |
 
 ## Badges
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8d009bcd-1d21-4765-a00d-02895502e86e/deploy-status)](https://app.netlify.com/sites/beedful/deploys)
